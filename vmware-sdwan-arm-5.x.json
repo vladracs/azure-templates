@@ -151,7 +151,7 @@
         "networkSecurityGroupName": "VELO_vVCE_SG",
         "sshKeyPath": "[concat('/home/azureuser/.ssh/authorized_keys')]",
         "sshPubKey": "parameters('SslPublicKey')",
-        "cloudinit": "[concat('#cloud-config\npassword: Velocloud123\nchpasswd: { expire: False }\nssh_pwauth: True\nvelocloud:\n vce:\n  management_interface: false\n  vco: ',parameters('VCO'), '\n  activation_code: ',parameters('ActivationKey'), '\n  vco_ignore_cert_errors: ', parameters('IgnoreCertErrors'),'\n')]",
+        "cloudinit": "[concat('#cloud-config\npassword: Your_Password\nchpasswd: { expire: False }\nssh_pwauth: True\nvelocloud:\n vce:\n  management_interface: false\n  vco: ',parameters('VCO'), '\n  activation_code: ',parameters('ActivationKey'), '\n  vco_ignore_cert_errors: ', parameters('IgnoreCertErrors'),'\n')]",
         "images": {
             "Virtual Edge 5.0.1.x": {
                 "publisher": "vmware-inc",
